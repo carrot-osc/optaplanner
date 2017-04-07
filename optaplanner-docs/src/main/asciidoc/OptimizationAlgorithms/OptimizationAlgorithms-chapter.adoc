@@ -416,7 +416,7 @@ This `Termination` will most likely sacrifice perfect reproducibility (even with
 [[bestScoreTermination]]
 === BestScoreTermination
 
-`BestScoreTermination` terminates when a certain score has been reached.
+`BestScoreTermination` terminates as a soon as a feasible solution has been discovered.
 Use this `Termination` where the perfect score is known, for example for four queens (which uses a <<simpleScore,SimpleScore>>):
 
 [source,xml,options="nowrap"]
