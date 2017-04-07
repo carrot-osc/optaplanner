@@ -416,7 +416,7 @@ This `Termination` will most likely sacrifice perfect reproducibility (even with
 [[bestScoreTermination]]
 === BestScoreTermination
 
-`BestScoreTermination` terminates when a certain score has been reached.
+`BestScoreTermination` terminates as a soon as a feasible solution has been discovered.
 Use this `Termination` where the perfect score is known, for example for four queens (which uses a <<simpleScore,SimpleScore>>):
 
 [source,xml,options="nowrap"]
@@ -450,7 +450,7 @@ In this instance, `Termination` once a feasible solution has been reached is not
 [[bestScoreFeasibleTermination]]
 === BestScoreFeasibleTermination
 
-Terminates when a certain score is feasible.
+Terminates as soon as a feasible solution has been discovered.
 Requires that `Score` implements `FeasibilityScore`.
 
 [source,xml,options="nowrap"]
